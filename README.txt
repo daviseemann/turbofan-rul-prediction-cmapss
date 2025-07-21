@@ -1,1 +1,0 @@
-O arquivo base é o que desenvolvi primeiro, os outros são copias para controle com alterações de testes.

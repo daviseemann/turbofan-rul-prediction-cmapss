@@ -1,2 +1,77 @@
-# dados/4.+Bearings/*
-dados/*
+# =======================================
+# Turbofan RUL Prediction - .gitignore
+# =======================================
+
+# Dados e resultados
+data/raw/
+data/processed/
+data/external/
+models/checkpoints/
+models/final/
+results/figures/
+results/metrics/
+results/reports/
+
+# Arquivos temporários e cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# TensorFlow e ML
+*.h5
+*.hdf5
+*.pb
+checkpoint
+saved_model/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos pessoais e temporários
+*.pdf.PDF
+*HISTORICO*
+*.zip
+temp/
+tmp/
+
+# Experimentos e drafts
+drafts/
+experiments/
+scratch/
