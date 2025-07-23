@@ -32,3 +32,22 @@ def plots(history, xlim=None, ylim=None):
     plt.xlim(xlim)
     plt.ylim(ylim)
     plt.grid()
+
+
+def plot_rul_by_engine(df, engines_to_plot=5):
+    """Plota o RUL ao longo do tempo para algumas engines"""
+    # Selecionar engines para visualizar
+    engine_ids = df["engine_id"].unique()[:engines_to_plot]
+
+    plt.figure(figsize=(8, 6))
+
+    for engine_id in engine_ids:
+        engine_data = df[df["engine_id"] == engine_id]
+        plt.plot(engine_data["cycle"], engine_data["RUL"], label=f"Engine {engine_id}")
+
+    plt.xlabel("Cycle")
+    plt.ylabel("RUL")
+    plt.title("RUL por Engine ID")
+    plt.legend()
+    plt.grid(True)
+    plt.show()

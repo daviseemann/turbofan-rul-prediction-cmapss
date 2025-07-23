@@ -1,8 +1,7 @@
 import pandas as pd
 import numpy as np
 
-
-def cmapss_loader(train_path, test_path, test_rul_path):
+def cmapss_loader_pandas(train_path, test_path, test_rul_path):
 
     # Nomes das colunas (de acordo com a documentação original do C-MAPSS)
     column_names = (
